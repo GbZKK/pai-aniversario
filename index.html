@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversário, Pai 💙</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #e6f0ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      text-align: center;
+      animation: aparecer 1s ease;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #2b5cff;
+      margin-bottom: 12px;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin: 12px 0;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .foto {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #dbe7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: #2b5cff;
+      overflow: hidden;
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .botao {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: #2b5cff;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .botao:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(43, 92, 255, 0.4);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Feliz Aniversário, Pai 🎉</h1>
+
+    <div class="foto">
+      <img src="inmg/caminhao.jpeg">
+    </div>
+
+    <div class="emoji">💙🎂✨</div>
+
+    <p>
+      Pai, hoje é um dia especial porque celebramos você! 
+      Obrigado por todo carinho, apoio e por sempre estar ao meu lado sempre que eu preciso, e por me dar todo o amor que eu preciso.
+      Que seu dia seja cheio de alegria, paz e momentos felizes.
+    </p>
+
+    <p>
+      (Aqui você pode escrever seu próprio texto, do seu jeitinho ✍️)
+    </p>
+
+    <a href="memorias.html" class="botao">Te amo, pai 💙</a>
+
+    <footer>
+      Feito com carinho só pra você 🫶
+    </footer>
+  </div>
+</body>
+</html>

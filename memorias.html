@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossas Memórias 💙</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff, #e6f0ff);
+      padding: 16px;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2b5cff;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .texto-fofo {
+      background: #f4f7ff;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .texto-fofo.aparecer {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .galeria.aparecer {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .botao {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #2b5cff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nossas Memórias 💙</h1>
+
+    <div class="texto-fofo">
+      <p>
+        Muito obrigado do fundo do meu coração, por cada momento bons que tivemos juntos, por cada conversa que tivemos, seja eu te contando sobre algum jogo
+        ou a gente conversando de pai pra filho, eu amo passar cada segundo com você
+      </p>
+      <p>
+        Obrigado por cada conselho, cada bronca que virou aprendizado e cada momento simples que acabou se tornando uma lembrança enorme.
+        Você sempre esteve ali, do seu jeito, e isso fez toda a diferença na minha vida.
+      </p>
+      <p>
+        Eu lembro de todos nossos momentos juntos, cada lembrança tem um lugar muito especial no meu coração, a primeira vez que fomos pescar
+        ou quando viajei com você a primeira vez, e até quando a gente se viu depois de muito tempo quando você se machucou, lembro de cada abraço que você me da 
+        quando a gente se ve, lembro de cada momento que você fala comigo, por mais bobo que seja, pra mim sempre vai ser muito importante, Amo o jeito que você fala comigo
+        o carinho enorme que você tem por mim, e apesar de todos os momentos ruins, eu me inspiro muito em você e pra mim e com certeza pra muita gente, você é incrivel e especial
+        pra muitas pessoas, principalmente pra mim
+      </p>
+    </div>
+
+    <div class="texto-fofo">
+      <p>
+        Lembro de risadas, conversas aleatórias, silêncios confortáveis e dias comuns que,
+        hoje, significam muito mais do que eu imaginava.
+      </p>
+      <p>
+        Cada fase da minha vida tem um pedacinho seu, e esse site é só uma forma pequena
+        de mostrar o tamanho da gratidão e do amor que eu sinto.
+      </p>
+    </div>
+
+    <div class="galeria">
+      <img src="inmg/caminhao.jpeg" alt="Momento nosso">
+      <img src="inmg/pai e a gorda.jpeg" alt="Outro momento nosso">
+      <img src="inmg/pai szinho.jpeg" alt="Momento nosso">
+      <img src="inmg/WhatsApp Image 2026-01-08 at 18.22.11.jpeg" alt="Outro momento nosso">
+    </div>
+
+    <a href="index.html" class="botao">Voltar 💙</a>
+
+    <footer>
+      Feito com amor e muitas lembranças 🫶
+    </footer>
+  </div>
+  <script>
+    const elementos = document.querySelectorAll('.texto-fofo, .galeria');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('aparecer');
+        }
+      });
+    });
+
+    elementos.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
